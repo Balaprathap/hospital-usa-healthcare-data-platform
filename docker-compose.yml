@@ -19,3 +19,20 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: hospital360-zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  spark-master:
+    image: apache/spark:3.5.5
+    container_name: hospital360-spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+
+  spark-worker:
+    image: apache/spark:3.5.5
+    container_name: hospital360-spark-worker
+    depends_on:
+      - spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://hospital360-spark-master:7077
+    ports:
+      - "8081:8081"
