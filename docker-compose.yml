@@ -27,6 +27,8 @@ services:
     ports:
       - "7077:7077"
       - "8080:8080"
+    volumes:
+      - ./:/opt/spark/work-dir
 
   spark-worker:
     image: apache/spark:3.5.5
@@ -36,3 +38,5 @@ services:
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://hospital360-spark-master:7077
     ports:
       - "8081:8081"
+    volumes:
+      - ./:/opt/spark/work-dir
