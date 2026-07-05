@@ -1,0 +1,8 @@
+{
+    "pipeline_name": "Hospital360 CMS Ingestion",
+    "execution_time": "2026-07-05 22:54:39",
+    "status": "SUCCESS",
+    "records_processed": 5432,
+    "batch_files_created": 6,
+    "execution_time_seconds": 3.81
+}
