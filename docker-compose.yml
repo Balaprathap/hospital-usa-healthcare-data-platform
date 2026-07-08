@@ -43,3 +43,18 @@ services:
       - "8081:8081"
     volumes:
       - ./:/opt/spark/work-dir
+
+  postgres:
+    image: postgres:16
+    container_name: hospital360-postgres
+    environment:
+      POSTGRES_USER: hospital360
+      POSTGRES_PASSWORD: hospital360
+      POSTGRES_DB: hospital360_dw
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
