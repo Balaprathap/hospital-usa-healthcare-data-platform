@@ -1,0 +1,17 @@
+.git
+.gitignore
+.vscode
+.venv
+__pycache__
+*.pyc
+
+logs/
+metadata/
+
+data_ingestion/raw/
+
+spark-warehouse/
+
+*.json
+
+README.md
