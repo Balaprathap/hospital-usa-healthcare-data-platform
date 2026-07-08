@@ -8,8 +8,11 @@ The platform ingests hospital data in real time, processes it using the **Medall
 
 # 📌 Project Overview
 
-This project demonstrates a modern Data Engineering pipeline that simulates how healthcare organizations ingest, process, and analyze hospital quality data.
+Hospital360 is a production-style end-to-end healthcare data engineering platform built using **Docker, Apache Kafka, Apache Spark Structured Streaming, PostgreSQL, and Power BI**.
 
+Docker is used to orchestrate all infrastructure services including Kafka, Zookeeper, Spark Master, Spark Worker, and PostgreSQL.
+
+Apache Spark performs distributed stream processing using the Medallion Architecture (Bronze → Silver → Gold), transforming raw healthcare data into analytics-ready datasets stored in PostgreSQL for reporting with Power BI.
 The platform includes:
 
 - Real-time data ingestion
@@ -325,22 +328,15 @@ spark/load_gold_to_postgres.py
 
 # 🎯 Key Features
 
-✅ Real-time Streaming Pipeline
-
-✅ Apache Kafka Integration
-
-✅ Spark Structured Streaming
-
-✅ Medallion Architecture
-
-✅ Parquet Data Lake
-
-✅ PostgreSQL Warehouse
-
-✅ Dockerized Infrastructure
-
-✅ Power BI Ready
-
+- ✅ Dockerized multi-container data platform
+- ✅ Apache Kafka real-time data ingestion
+- ✅ Apache Spark Structured Streaming
+- ✅ Distributed Spark Cluster (Master + Worker)
+- ✅ Medallion Architecture (Bronze, Silver, Gold)
+- ✅ Parquet-based Data Lake
+- ✅ PostgreSQL Data Warehouse
+- ✅ Business KPI Aggregations
+- ✅ GitHub Version Controlled
 ---
 
 # 🚀 Future Enhancements
@@ -357,18 +353,33 @@ spark/load_gold_to_postgres.py
 - Unit & Integration Testing
 
 ---
+## 💡 Skills Demonstrated
 
-# 📷 Screenshots
+- Real-Time Data Streaming
+- Distributed Data Processing
+- ETL / ELT Pipeline Development
+- Data Lake Architecture
+- Data Warehousing
+- Spark Structured Streaming
+- Apache Kafka
+- Docker Containerization
+- PostgreSQL
+- Business Intelligence
+- Data Modeling
+- Git Version Control
+# 🚀 Technologies Used
 
-> Add screenshots after completing the dashboard.
-
-- Spark UI
-- Kafka Streaming
-- PostgreSQL Tables
-- Power BI Dashboard
-- Architecture Diagram
-
----
+| Category | Technologies |
+|----------|--------------|
+| Programming | Python 3 |
+| Containerization | Docker, Docker Compose |
+| Message Streaming | Apache Kafka |
+| Distributed Processing | Apache Spark 3.5, Spark Structured Streaming |
+| Data Lake Storage | Parquet |
+| Data Warehouse | PostgreSQL 16 |
+| Data Architecture | Medallion Architecture (Bronze, Silver, Gold) |
+| Visualization | Power BI |
+| Version Control | Git, GitHub |
 
 # 👨‍💻 Author
 
