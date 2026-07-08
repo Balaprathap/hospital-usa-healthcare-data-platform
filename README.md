@@ -1,3 +1,11 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-3.5-E25A1C?logo=apachespark)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-Streaming-231F20?logo=apachekafka)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
+![Power BI](https://img.shields.io/badge/Power_BI-Analytics-F2C811?logo=powerbi)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)
 # 🏥 Hospital360 USA Healthcare Data Platform
 
 A production-style **end-to-end Healthcare Data Engineering Platform** built using **Apache Kafka, Apache Spark Structured Streaming, PostgreSQL, Docker, and Power BI**.
@@ -5,6 +13,7 @@ A production-style **end-to-end Healthcare Data Engineering Platform** built usi
 The platform ingests hospital data in real time, processes it using the **Medallion Architecture (Bronze → Silver → Gold)**, stores curated business data in PostgreSQL, and provides analytics-ready datasets for business intelligence dashboards.
 
 ---
+
 
 # 📌 Project Overview
 
